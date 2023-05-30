@@ -1,0 +1,19 @@
+@import 'app/libs/fancybox/fancybox.scss';
+
+// Fonts
+$font: "Oswald-regular", sans-serif, Arial;
+$font-montserrat: "Montserrat-Bold", sans-serif, Arial;
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@include font('Montserrat-Bold', normal, 700, '../fonts/Montserrat-Bold.woff2');
+@include font('Oswald-regular', normal, 400, '../fonts/Oswald-regular.woff2');
+
+
